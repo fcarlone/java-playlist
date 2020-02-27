@@ -34,5 +34,5 @@ public class Album {
     }
 
 //  Add song to playlist
-    
+
 }
