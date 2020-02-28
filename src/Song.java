@@ -14,9 +14,10 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song{" +
-                "songName='" + songName + '\'' +
-                ", songDuration=" + songDuration +
-                '}';
+        return songName + ": " + songDuration;
+//        return "Song{" +
+//                "songName='" + songName + '\'' +
+//                ", songDuration=" + songDuration +
+//                '}';
     }
 }

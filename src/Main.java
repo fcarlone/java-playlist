@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class Main {
 
@@ -51,6 +52,16 @@ public class Main {
         albums.get(1).addSongToPlaylist(100, playList); // Does not exists
 
         play(playList);
+    }
+    //      Play method
+    private static void play(LinkedList<Song> playList){
+        ListIterator<Song> listIterator = playList.listIterator();
+        if(playList.size() == 0) {
+            System.out.println("No songs in playlist");
+            return;
+        } else {
+            System.out.println("Now playing -> " + listIterator.next().toString());
+        }
 
     }
 }
